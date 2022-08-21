@@ -1,0 +1,57 @@
+def includeIfNeeded(proj) {
+    if (proj.startsWith(":api-live") || proj.startsWith(':api-mock')) {
+        def taskNames = gradle.startParameter.taskNames
+        if (!taskNames.isEmpty()) {
+            def task = taskNames.get(0)
+            def projectName = proj.split(':')[2]
+            def projectFlavor = proj.split(':')[1].split('-')[1]
+            def flavorFromProject = projectName + projectFlavor
+
+            if (proj == ':api-live:common' && task.toLowerCase().contains('live')) {
+                include proj
+                return
+            }
+
+            if (task.toLowerCase().contains(flavorFromProject)) {
+                include proj
+                println "included $proj"
+                return
+            } else {
+                println("excluded $proj")
+                return
+            }
+        }
+    }
+    println("Project name $proj did not match with the passed task, including")
+    include proj
+}
+
+
+include ':app'
+rootProject.name = 'GenericAndroidProject'
+include ':dto'
+include ':domain'
+include ':api-common'
+include ':common-android'
+include ':common-kotlin'
+include ':common-compose'
+include ':common-test-android'
+include 'usecase:steamstore'
+project(':usecase:steamstore').projectDir = file('usecase/steamstore')
+include 'screens-compose:steamstore'
+project(':screens-compose:steamstore').projectDir = file('screens-compose/steamstore')
+include 'usecase:news'
+project(':usecase:news').projectDir = file('usecase/news')
+include 'screens:news'
+project(':screens:news').projectDir = file('screens/news')
+include 'screens-compose:entrypoint'
+project(':screens-compose:entrypoint').projectDir = file('screens-compose/entrypoint')
+include 'repository:news'
+project(':repository:news').projectDir = file('repository/news')
+include 'repository:steamstore'
+project(':repository:steamstore').projectDir = file('repository/steamstore')
+includeIfNeeded ':api-live:news'
+includeIfNeeded ':api-mock:news'
+includeIfNeeded ':api-live:steamstore'
+includeIfNeeded ':api-mock:steamstore'
+includeIfNeeded ':api-live:common'

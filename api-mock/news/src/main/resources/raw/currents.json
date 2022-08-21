@@ -1,0 +1,400 @@
+{
+  "status": "ok",
+  "news": [
+    {
+      "id": "93e7cb46-ef28-464a-b50f-abe9e41ee726",
+      "title": "17 TV Characters That Were So Insufferable They Should've Been Killed Off, And 16 Who Deserved To Live",
+      "description": "11.\n\nDeserved better: Poussey from Orange Is the New Black, who was attacked and killed by a prison guard even though she was only trying to help calm Suzanne down....",
+      "url": "https:\/\/www.buzzfeed.com\/laurengarafano\/characters-who-shouldve-been-killed-off-or-deserved-better",
+      "author": "Lauren Garafano",
+      "image": "https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2022-08\/17\/19\/enhanced\/51a1eaec0c30\/original-1027-1660763509-15.jpg?crop=1200:628;0,0%26downsize=1250:*",
+      "language": "en",
+      "category": [
+        "entertainment",
+        "television",
+        "movie"
+      ],
+      "published": "2022-08-19 13:46:04 +0000"
+    },
+    {
+      "id": "305ace87-d3c9-49b8-b7b8-e1fbe1cf0d16",
+      "title": "Why your next PC will have an NPU",
+      "description": "Windows is getting ready to support a next generation of silicon that's going to come with AI accelerators.",
+      "url": "https:\/\/www.techrepublic.com\/article\/why-next-pc-have-npu\/",
+      "author": "Simon Bisson",
+      "image": "https:\/\/d1rytvr7gmk1sx.cloudfront.net\/wp-content\/uploads\/2022\/08\/why-next-pc-have-npu.jpeg?x27457",
+      "language": "en",
+      "category": [
+        "technology"
+      ],
+      "published": "2022-08-19 13:40:32 +0000"
+    },
+    {
+      "id": "827bc3d5-1f42-446a-9328-5c9657215ef0",
+      "title": "Australia to build own mRNA vaccine plant with Moderna",
+      "description": "Australia, mRNA vaccine plant, Moderna",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112652",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/bm\/img\/bernama.png",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "ade57da1-f5a6-4265-8ffa-e12051c5a58f",
+      "title": "UEM Sunrise's indirect unit divests Roc-Union stake, exits South African market",
+      "description": "UEM Sunrise, divestment, Bursa Malaysia, South Afr",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112653",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/40fcfd659953ada2a3e9396d2126ec645f802f83a2b12-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "069b44de-178d-48cc-9ad2-0fb482daaee9",
+      "title": "Agong performs Friday prayers at Hagia Sophia Mosque",
+      "description": "Agong, Turkiye, Friday prayers, mosque, Hagia Soph",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112654",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/5b30d4afd522bbf4b0b2a618cb23af5c62ff7a90bce79-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "3ede94be-dc9d-4aad-b25d-e2ffc2d640b9",
+      "title": "Australia's former PM secretly appointed to 5 additional portfolios, says Albanese",
+      "description": "Australia, former prime minister, Scott Morrison,",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112656",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/d79476e672bf95297b337c333fd5e68662ff85300e8d3-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "8d0faa70-6522-40c3-9300-3987cbcbbf42",
+      "title": "PM: Govt allocates RM6.3 billion to Selangor under Second Rolling Plan of 12MP",
+      "description": "Ismail Sabri, allocation, flood mitigation, MP12,",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112657",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/e67175cece6474910b27dda0c7a846be62ff850a13599-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "67aaddce-522b-4bfc-ad8f-09d84fd3ed96",
+      "title": "Premier League: Kelantan United cruise to 4-0 home win over Selangor FC II",
+      "description": "KUFC, selangor fc II, premier, league, football",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112658",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/ec03e0419b28b0bf20ba434bbfdbafe362ff7d45d40ca-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "f301e8a8-3f72-43e3-beea-4c843436f5ae",
+      "title": "Koreans out to stop Japan's dominance in Asia BMX C'ship",
+      "description": "cycling, BMX, MNCF, favourites, japan, south korea",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112660",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/de08a99961a3b89e065eb1336a83df2b62ff88778814c-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "72a9b3bc-2c2c-42b7-848f-5dfe696c33fa",
+      "title": "Need creativity, responsibility to be successful, says Jimmy Choo",
+      "description": "Jimmy Choo, Bernama TV, The Nation, businesses, e",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112666",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/56e964b9f13afbdbcee3ca970ba68e2262ff8f38c60a4-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "affcb295-c78e-42d0-bed9-c8f13de28d30",
+      "title": "Over 1,000 entrepreneurs benefit from ECER-SIRIM initiative",
+      "description": "ECERDC, SIRIM, programme, SME",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112667",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/d932274a4bcf5a20257efce26ad39a2d62ff8bdc36aa8-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "de87eec3-e1fb-4025-97b7-2006716e2d1a",
+      "title": "Jelajah AKM Selangor with entrepreneur theme gives added value to business sector",
+      "description": "Noh Omar, Jelajah AKM Selangor, entrepreneur, MyM",
+      "url": "http:\/\/www.bernama.com\/en\/news.php?id=2112668",
+      "author": "bernama",
+      "image": "https:\/\/www.bernama.com\/storage\/photos\/7a90cb73fe75f434571693d54fa94c2a62ff91396b69d-medium",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:34:58 +0000"
+    },
+    {
+      "id": "a34c395e-21cd-49aa-b164-364b3eda3a4b",
+      "title": "PNB hikes fixed deposit interest rates twice in a week: Now get up to 6.10%",
+      "description": "Punjab National Bank (PNB), a public sector lender, has once more announced a rise in the interest rates for fixed deposits below ₹2 crore.",
+      "url": "https:\/\/www.livemint.com\/money\/personal-finance\/pnb-hikes-fixed-deposit-interest-rates-twice-in-a-week-now-get-up-to-610-11660899647422.html",
+      "author": "Vipul Das",
+      "image": "https:\/\/images.livemint.com\/img\/2022\/08\/19\/600x338\/3ccd4330-6963-11eb-ae88-510c890b1f8a_1612745320328_1660899668386_1660899668386.jpg",
+      "language": "en",
+      "category": [
+        "economy"
+      ],
+      "published": "2022-08-19 13:30:31 +0000"
+    },
+    {
+      "id": "c6725cd7-2738-4ece-b7bf-22a97d4a3c52",
+      "title": "ICICI Bank hikes fixed deposit interest rates on tenures of 1 to 10 years",
+      "description": "The private sector lender ICICI Bank has hiked fixed deposit interest rates on fixed deposits of less than ₹2 Cr.",
+      "url": "https:\/\/www.livemint.com\/money\/personal-finance\/icici-bank-hikes-fixed-deposit-interest-rates-on-tenures-of-1-to-10-years-11660901458242.html",
+      "author": "Vipul Das",
+      "image": "https:\/\/images.livemint.com\/img\/2022\/08\/19\/600x338\/ICICI_1660901482204_1660901482204.jpg",
+      "language": "en",
+      "category": [
+        "economy"
+      ],
+      "published": "2022-08-19 13:30:29 +0000"
+    },
+    {
+      "id": "ca023e51-77ff-457c-90e7-5842ec7e1456",
+      "title": "Liz Cheney will be gone from Congress but not forgotten",
+      "description": "Rep. Liz Cheney (R-Wyo.) lost a Republican primary to keep her seat this week and will soon be gone from Congress, but she will not be forgotten for her fight for principle over party.\nFormer President Donald Trump has won some and lost some GOP primary races in which he's endorsed candidates, but h...",
+      "url": "https:\/\/thehill.com\/opinion\/campaign\/3607612-liz-cheney-will-be-gone-from-congress-but-not-forgotten\/",
+      "author": "thehill",
+      "image": "None",
+      "language": "en",
+      "category": [
+        "politics"
+      ],
+      "published": "2022-08-19 13:30:00 +0000"
+    },
+    {
+      "id": "bad6d00a-5bab-4827-93e0-c0e76ef0eaa9",
+      "title": "Hasni: Johor BN moots that Pasir Gudang, Pengerang to be named as new districts",
+      "description": "JOHOR BARU, Aug 19 — Johor Barisan Nasional (BN) has proposed that the state government considers upgrading Pasir Gudang and Pengerang as new districts in the state considering...",
+      "url": "https:\/\/www.malaymail.com\/news\/malaysia\/2022\/08\/19\/hasni-johor-bn-moots-that-pasir-gudang-pengerang-to-be-named-as-new-districts\/23671",
+      "author": "Malay Mail",
+      "image": "https:\/\/www.malaymail.com\/malaymail\/uploads\/images\/2022\/08\/19\/42652.jpeg?v=1660915860",
+      "language": "en",
+      "category": [
+        "general",
+        "regional"
+      ],
+      "published": "2022-08-19 13:21:25 +0000"
+    },
+    {
+      "id": "4055040a-5f59-472a-b0c0-d1df23c56b40",
+      "title": "2 shark bites reported at S. Carolina's most popular beach",
+      "description": "MYRTLE BEACH, S.C. (AP) — Two swimmers survived being bitten by sharks this week at South Carolina’s most popular beach. Both people were attacked in Myrtle Beach on Monday with one suffering a...",
+      "url": "https:\/\/www.winnipegfreepress.com\/world\/2022\/08\/19\/2-shark-bites-reported-at-s-carolinas-most-popular-beach",
+      "author": "Feedloaderapi",
+      "image": "None",
+      "language": "en",
+      "category": [
+        "regional"
+      ],
+      "published": "2022-08-19 13:19:19 +0000"
+    },
+    {
+      "id": "4a15fb0a-9649-42d2-a70c-1a421d16f94a",
+      "title": "GOP Senate runs appear to struggle in Arizona, Florida, Georgia, Nevada, Pennsylvania, Wisconsin",
+      "description": "So much for a Republican wave, at least in the U.S. Senate. Democratic candidates running in the most critical Senate races of the midterm elections appear to have captured the momentum from Republicans, climbing ahead in polling and sending a warning to GOP leaders that the so-called red wave isn’t...",
+      "url": "https:\/\/www.washingtontimes.com\/news\/2022\/aug\/19\/gop-senate-runs-appear-to-struggle-in-arizona-flor\/",
+      "author": "Susan Ferrechio",
+      "image": "https:\/\/twt-thumbs.washtimes.com\/media\/image\/2018\/07\/09\/Congress_60408.jpg-27db3_c0-0-4776-2786_s1200x700.jpg?bf48567a4cad5519e476c17d23fd2d507d36fd5c",
+      "language": "en",
+      "category": [
+        "politics"
+      ],
+      "published": "2022-08-19 13:17:14 +0000"
+    },
+    {
+      "id": "8c5d1b85-09cb-48b0-8e2b-111d60bf1cbc",
+      "title": "GameStop has a PS5 restock in stores today — here’s how to get yours | CNN Underscored",
+      "description": "GameStop will have PS5 bundles at its physical store locations. Here's how to have the best shot at nabbing yours.",
+      "url": "https:\/\/www.cnn.com\/cnn-underscored\/electronics\/ps5-restock-gamestop-august-2022?iid=CNNUnderscoredHPcontainer",
+      "author": "cnn",
+      "image": "None",
+      "language": "en",
+      "category": [
+        "general"
+      ],
+      "published": "2022-08-19 13:16:28 +0000"
+    },
+    {
+      "id": "e01c5e53-4d70-45fa-b0d9-aa87a7403cc7",
+      "title": "Tok Mat: BN ready and prepared to face GE15 in nine states",
+      "description": "JOHOR BARU, Aug 19 — Barisan Nasional (BN) is optimistic that nine states, including Johor, are prepared to face the coming 15th general election (GE15) that can be held anytime soon, said the coalition's election director Datuk Seri Mohamad Hasan.\nThe politician known as Tok Mat said the positive l...",
+      "url": "https:\/\/www.malaymail.com\/news\/malaysia\/2022\/08\/19\/tok-mat-bn-ready-and-prepared-to-face-ge15-in-nine-states\/23670",
+      "author": "Malay Mail",
+      "image": "https:\/\/www.malaymail.com\/malaymail\/uploads\/images\/2022\/08\/19\/42650.jpeg?v=1660915800",
+      "language": "en",
+      "category": [
+        "general",
+        "regional"
+      ],
+      "published": "2022-08-19 13:15:30 +0000"
+    },
+    {
+      "id": "09e06c0a-5aca-41b7-8f4d-4402898b0657",
+      "title": "Analysis | Look! It’s a Sign Democracy Isn’t Totally Broken",
+      "description": "A surprisingly normal result: President Biden’s poll numbers stopped dropping when the economy and Covid-19 improved.",
+      "url": "https:\/\/www.washingtonpost.com\/business\/look-its-a-sign-democracy-isnt-totally-broken\/2022\/08\/19\/ff949ec8-1fbe-11ed-9ce6-68253bd31864_story.html",
+      "author": "Jonathan Bernstein",
+      "image": "https:\/\/www.washingtonpost.com\/resizer\/2CjPNwqvXHPS_2RpuRTKY-p3eVo=\/1484x0\/www.washingtonpost.com\/pb\/resources\/img\/twp-social-share.png",
+      "language": "en",
+      "category": [
+        "business"
+      ],
+      "published": "2022-08-19 13:14:09 +0000"
+    },
+    {
+      "id": "f66d8379-850c-4a06-913f-e7d3033aa398",
+      "title": "Arizona judge to hear state request to enforce abortion ban",
+      "description": "An Arizona judge will hear arguments Friday on the state’s request to allow prosecutors to enforce a near-total ban on abortions under a law that has been blocked for nearly 50 years under a now-overruled U.S. Supreme Court ruling,",
+      "url": "https:\/\/www.washingtontimes.com\/news\/2022\/aug\/19\/arizona-judge-to-hear-state-request-to-enforce-abo\/",
+      "author": "Bob Christie",
+      "image": "https:\/\/twt-thumbs.washtimes.com\/media\/image\/2022\/06\/25\/abortion_arizona_89102_c0-150-3600-2250_s1200x700.jpg?187bc123cc4510feb7f1966081317bdd024739c4",
+      "language": "en",
+      "category": [
+        "business"
+      ],
+      "published": "2022-08-19 13:12:26 +0000"
+    },
+    {
+      "id": "4007b2d2-8647-4cdd-9e8e-55771d0cbcc2",
+      "title": "Biden bill to help millions escape higher health care costs",
+      "description": "Millions of people in the United States will be spared from big increases in health care costs next year after President Joe Biden signed legislation extending generous subsidies for those who buy plans through federal and state marketplaces.",
+      "url": "https:\/\/www.washingtontimes.com\/news\/2022\/aug\/19\/biden-bill-to-help-millions-escape-higher-health-c\/",
+      "author": "Amanda Seitz",
+      "image": "https:\/\/twt-thumbs.washtimes.com\/media\/image\/2022\/08\/19\/health_care_subsidies_61927_c0-210-5038-3148_s1200x700.jpg?e7dcc48c5088460bf93adaf63162ed76cca2f730",
+      "language": "en",
+      "category": [
+        "business"
+      ],
+      "published": "2022-08-19 13:12:26 +0000"
+    },
+    {
+      "id": "2ce4d32a-e375-410f-8deb-8c3222004ddf",
+      "title": "Ukraine fears Russian plan to cut power from captured nuclear plant",
+      "description": "Russia said to be seeking diesel for backup generators, allowing it to cut off electrical output from reactors",
+      "url": "https:\/\/www.theguardian.com\/world\/2022\/aug\/19\/ukraine-fears-russian-plan-to-cut-power-from-captured-nuclear-plant",
+      "author": "Emma Graham-Harrison in Kyiv",
+      "image": "https:\/\/i.guim.co.uk\/img\/media\/d31640b769c261fbd317d5e94971f353027476fd\/0_210_6312_3786\/master\/6312.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=840dd0cf14114071f7633590856ee59c",
+      "language": "en",
+      "category": [
+        "world"
+      ],
+      "published": "2022-08-19 13:11:58 +0000"
+    },
+    {
+      "id": "d483856e-8fde-4a0e-b43c-5153478e1de2",
+      "title": "Dancing in the limelight: when world leaders take to the dancefloor",
+      "description": "Sanna Marin follows in a long line of politicians filmed dancing, some more enthusiastically than others",
+      "url": "https:\/\/www.theguardian.com\/world\/2022\/aug\/19\/world-leaders-dancefloor-videos-sanna-marin",
+      "author": "Jon Henley",
+      "image": "https:\/\/i.guim.co.uk\/img\/media\/66139f0c64fb7bc86a0d4557f53e935b7f8e0147\/0_266_1018_610\/master\/1018.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9f5f522fee1cf2894f42194808e2f36f",
+      "language": "en",
+      "category": [
+        "world"
+      ],
+      "published": "2022-08-19 13:11:54 +0000"
+    },
+    {
+      "id": "cb4e931e-b79e-4b44-ad97-afc640b7105f",
+      "title": "Analysis | Help the World’s Cities Prepare for Extreme Heat",
+      "description": "Dangerous heat waves could become longer and more frequent. Better warning systems and greener cities can help avert the worst.",
+      "url": "https:\/\/www.washingtonpost.com\/business\/energy\/help-the-worlds-cities-prepare-for-extreme-heat\/2022\/08\/19\/fedcd036-1fbe-11ed-9ce6-68253bd31864_story.html",
+      "author": "The Editors",
+      "image": "https:\/\/www.washingtonpost.com\/wp-apps\/imrs.php?src=https:\/\/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com\/public\/7U6JIWQ7XYI63HHGNASTXUYYMQ.jpg&w=1440",
+      "language": "en",
+      "category": [
+        "business"
+      ],
+      "published": "2022-08-19 13:10:04 +0000"
+    },
+    {
+      "id": "31df4033-377f-4c15-834a-6da453157328",
+      "title": "Russia's Roskomnadzor announces action against foreign IT companies",
+      "description": "",
+      "url": "https:\/\/news.cgtn.com\/news\/2022-08-19\/Russia-s-Roskomnadzor-announces-action-against-foreign-IT-companies--1cD9VfeMVbO\/index.html",
+      "author": "Cgtn",
+      "image": "https:\/\/news.cgtn.com\/resource\/default\/img\/breaking.png",
+      "language": "en",
+      "category": [
+        "world"
+      ],
+      "published": "2022-08-19 13:10:00 +0000"
+    },
+    {
+      "id": "9a15af89-a342-4614-8c3e-2cba0d739401",
+      "title": "Russian President Putin meets Kazakh counterpart Tokayev in Sochi",
+      "description": "",
+      "url": "https:\/\/news.cgtn.com\/news\/2022-08-19\/Russian-President-Putin-meets-Kazakh-counterpart-Tokayev-in-Sochi-1cD1sxxMj7i\/index.html",
+      "author": "Cgtn",
+      "image": "https:\/\/news.cgtn.com\/resource\/default\/img\/breaking.png",
+      "language": "en",
+      "category": [
+        "world"
+      ],
+      "published": "2022-08-19 13:07:00 +0000"
+    },
+    {
+      "id": "0f8d61b7-9599-4d35-b2f9-5a11f1e7ee45",
+      "title": "Biden to host summit on countering hate-fueled violence",
+      "description": "President Biden plans to host a summit in mid-September focused on stamping out the effects of hate-fueled violence in the United States in furtherance of his campaign pledge to unify the country.  \nWhite House press secretary Karine Jean-Pierre said in a statement on Friday that the \"United We Stan...",
+      "url": "https:\/\/thehill.com\/homenews\/administration\/3607748-biden-to-host-summit-on-countering-hate-fueled-violence\/",
+      "author": "thehill",
+      "image": "None",
+      "language": "en",
+      "category": [
+        "politics"
+      ],
+      "published": "2022-08-19 13:07:00 +0000"
+    },
+    {
+      "id": "19479054-0e4f-44e7-a4fc-1fc91d33199c",
+      "title": "Qualcomm could be returning to the server market",
+      "description": "Chip giant set for a server relaunch, sources claim",
+      "url": "https:\/\/www.techradar.com\/news\/qualcomm-could-be-returning-to-the-server-market\/",
+      "author": "futurecdn",
+      "image": "https:\/\/cdn.mos.cms.futurecdn.net\/eE9kzkUBRSDMuqskdGvopT-1200-80.jpg",
+      "language": "en",
+      "category": [
+        "technology"
+      ],
+      "published": "2022-08-19 13:05:25 +0000"
+    }
+  ],
+  "page": 1
+}

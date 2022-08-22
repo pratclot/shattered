@@ -1,7 +1,6 @@
 package com.pratclot.news
 
 import com.pratclot.api.NewsApi
-import com.pratclot.dto.News
 import com.pratclot.dto.NewsDto
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.serialization.decodeFromString
@@ -13,11 +12,7 @@ import kotlin.coroutines.resumeWithException
 
 const val FILENAME = "raw/currents.json"
 
-class NewsApiMock @Inject constructor() : NewsApi {
-
-    private val json = Json {
-        ignoreUnknownKeys = true
-    }
+class NewsApiMock @Inject constructor(private val json: Json) : NewsApi {
 
     override suspend fun retrieveNews(language: String): NewsDto =
         suspendCancellableCoroutine { continuation ->

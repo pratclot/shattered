@@ -67,6 +67,14 @@ subprojects {
                             dimension "${name}Data"
                         }
                     }
+                    buildTypes {
+                        debugMinify {
+                            initWith debug
+                            applicationIdSuffix ".debugMinify"
+                            minifyEnabled true
+                            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                        }
+                    }
                 }
             }
 
@@ -202,6 +210,13 @@ subprojects {
                 }
                 testOptions {
                     animationsDisabled true
+                }
+                buildTypes {
+                    debugMinify {
+                        initWith debug
+                        minifyEnabled true
+                        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                    }
                 }
             }
 

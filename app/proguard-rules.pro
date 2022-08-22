@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.pratclot.news.News { *; }
+-keep class com.pratclot.steamstore.SteamStore { *; }
+-keep class com.pratclot.dto.NewsDto { *; }
+-keep class com.pratclot.dto.SteamStoreSearchResponse { *; }

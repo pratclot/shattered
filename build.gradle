@@ -37,6 +37,37 @@ allprojects {
     }
 }
 
+/**
+ * Unit test setup, pay attention!
+ */
+gradle.projectsEvaluated {
+    rootProject.tasks.register("allUnitTests")
+
+    def flavorCombo = ""
+    rootProject.subprojects.findAll {
+        def flavoredAndroidProjects = it.path.startsWith(":screens") && it.path != (":screens") && it.path != (":screens-compose") && it.path != (":screens-compose:entrypoint")
+        flavoredAndroidProjects
+    }.forEach {
+        def name = it.name
+        rootProject.tasks.getByName("allUnitTests").dependsOn("${it.path}:test${name.capitalize()}MockDebugUnitTest")
+        flavorCombo += "${name.capitalize()}Mock"
+    }
+
+    rootProject.subprojects.findAll { it.path == ":screens-compose:entrypoint" }
+            .forEach {
+                rootProject.tasks.getByName("allUnitTests").dependsOn("${it.path}:test${flavorCombo}DebugUnitTest")
+            }
+
+    rootProject.subprojects.findAll { it.path.startsWith(":common-") && (it.path.endsWith("-android") || it.path.endsWith("-compose")) }
+            .forEach {
+                rootProject.tasks.getByName("allUnitTests").dependsOn("${it.path}:testDebugUnitTest")
+            }
+
+    plugins.withId('java-library') {
+        rootProject.tasks.getByName("allUnitTests").dependsOn("${it.path}:test")
+    }
+}
+
 subprojects {
     apply plugin: "org.jlleitschuh.gradle.ktlint"
 

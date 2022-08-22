@@ -70,16 +70,28 @@ To solve R8 / minify / obfuscation issues:
 
 - use `debugMinify` build variant to see the exact failure in the logs
 - find the problematic class via `Analyze APK...` in AS
-- the simplest way to fix is to right-click it, take the first rule and apply it
-  in `app/proguard-rules.pro`
-- run the new version and see if it gives another error message
+- the simplest way to fix is to right-click it, select `Generate Proguard keep rule`, take the first
+  rule and apply it in `app/proguard-rules.pro` (I did not figure how to store these rules with the
+  subproject that holds deleted classes)
+- run the new version and see if it gives another error message (it should)
+
+To figure out Gradle task dependencies (other tasks):
+
+```bash
+./gradlew testNewsMockSteamstoreMockDebugUnitTest --dry-run
+```
+
+To see Gradle configuration dependencies (jars or projects):
+
+```bash
+./gradlew :usecase:news:dependencies --configuration implementation
+```
 
 ## TODO
 
 - consider [this](https://github.com/raamcosta/compose-destinations) for navigation
 - disable Jetifier
 - add baseline profile
-- figure out why `./gradlew testDebugUnitTest` does not run all tests
 - invent something to not duplicate `Retrofit` init code in Dagger modules
 - disable logging in OkHttpClient for non-debug builds (have to do some Gradle magic again)
 - fix `hideSecretFromPropertiesFile` - it does not copy `.cpp` files properly, forgets the package
@@ -90,3 +102,4 @@ To solve R8 / minify / obfuscation issues:
 - add an obfuscated release to GitHub
 - list used libs
 - install Hilt modules in scopes smaller than `SingletonComponent`
+- implement a common file resource reader for mock variants

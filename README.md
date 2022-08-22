@@ -66,6 +66,14 @@ To work with secrets (`common-android` is used):
 ./gradlew hideSecretFromPropertiesFile -PpropertiesFileName=secret.properties -Ppackage=com.pratclot
 ```
 
+To solve R8 / minify / obfuscation issues:
+
+- use `debugMinify` build variant to see the exact failure in the logs
+- find the problematic class via `Analyze APK...` in AS
+- the simplest way to fix is to right-click it, take the first rule and apply it
+  in `app/proguard-rules.pro`
+- run the new version and see if it gives another error message
+
 ## TODO
 
 - consider [this](https://github.com/raamcosta/compose-destinations) for navigation
@@ -81,3 +89,4 @@ To work with secrets (`common-android` is used):
   organize the subprojects for any other app the same way, plus will add some extensibility
 - add an obfuscated release to GitHub
 - list used libs
+- install Hilt modules in scopes smaller than `SingletonComponent`

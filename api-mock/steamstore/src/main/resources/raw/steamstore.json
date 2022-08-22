@@ -1,0 +1,151 @@
+{
+  "total": 9,
+  "items": [
+    {
+      "type": "app",
+      "name": "Brutal Legend",
+      "id": 225260,
+      "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499
+      },
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/225260\/capsule_231x87.jpg?t=1659380854",
+      "metascore": "80",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "streamingvideo": false,
+      "controller_support": "full"
+    },
+    {
+      "type": "app",
+      "name": "Brutal Orchestra",
+      "id": 1734320,
+      "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499
+      },
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1734320\/capsule_231x87.jpg?t=1659717511",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": true
+      },
+      "streamingvideo": false
+    },
+    {
+      "type": "app",
+      "name": "NECROPOLIS: BRUTAL EDITION",
+      "id": 384490,
+      "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999
+      },
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/384490\/capsule_231x87.jpg?t=1536069036",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+      },
+      "streamingvideo": false,
+      "controller_support": "full"
+    },
+    {
+      "type": "app",
+      "name": "Brutal Fate",
+      "id": 1409460,
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1409460\/capsule_231x87.jpg?t=1640800158",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "streamingvideo": false
+    },
+    {
+      "type": "app",
+      "name": "Brutal Legend Soundtrack",
+      "id": 225270,
+      "price": {
+        "currency": "USD",
+        "initial": 699,
+        "final": 699
+      },
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/225270\/capsule_231x87.jpg?t=1646681459",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "streamingvideo": false
+    },
+    {
+      "type": "app",
+      "name": "Brutal Games",
+      "id": 1026060,
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1026060\/capsule_231x87.jpg?t=1639244129",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "streamingvideo": false
+    },
+    {
+      "type": "app",
+      "name": "Brutal Runner",
+      "id": 697930,
+      "price": {
+        "currency": "USD",
+        "initial": 99,
+        "final": 99
+      },
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/697930\/capsule_231x87.jpg?t=1594200969",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "streamingvideo": false
+    },
+    {
+      "type": "app",
+      "name": "BRUTAL JOHN",
+      "id": 1859620,
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1859620\/capsule_231x87.jpg?t=1655208894",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "streamingvideo": false,
+      "controller_support": "full"
+    },
+    {
+      "type": "app",
+      "name": "Brutal Scales",
+      "id": 1091020,
+      "tiny_image": "https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1091020\/capsule_231x87.jpg?t=1584299184",
+      "metascore": "",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "streamingvideo": false,
+      "controller_support": "full"
+    }
+  ]
+}

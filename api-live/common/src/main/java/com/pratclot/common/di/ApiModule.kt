@@ -5,7 +5,6 @@ import dagger.Provides
 import dagger.Reusable
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import kotlinx.serialization.json.Json
 import okhttp3.Interceptor
 import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaType
@@ -23,13 +22,6 @@ const val HTTP_LOGGING_INTERCEPTOR = "HTTP_LOGGING_INTERCEPTOR"
 @InstallIn(SingletonComponent::class)
 @Module
 class ApiModule {
-
-    @Reusable
-    @Provides
-    fun provideJson(): Json = Json {
-        explicitNulls = false
-        ignoreUnknownKeys = true
-    }
 
     @Reusable
     @Provides

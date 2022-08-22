@@ -1,8 +1,6 @@
 name: Android CI
 
 on:
-  push:
-    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -25,4 +23,4 @@ jobs:
     - name: Run ktlint
       run: ./gradlew ktlintCheck
     - name: Run debug Unit tests
-      run: ./gradlew testDebugUnitTest
+      run: ./gradlew allUnitTests

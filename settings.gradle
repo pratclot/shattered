@@ -3,6 +3,17 @@ def includeIfNeeded(proj) {
         def taskNames = gradle.startParameter.taskNames
         if (!taskNames.isEmpty()) {
             def task = taskNames.get(0)
+            if (task.startsWith('test') || task == "allUnitTests") {
+
+                if (proj.startsWith(':api-mock')) {
+                    include proj
+                    println "included $proj"
+                    return
+                } else {
+                    println("excluded $proj")
+                    return
+                }
+            }
             def projectName = proj.split(':')[2]
             def projectFlavor = proj.split(':')[1].split('-')[1]
             def flavorFromProject = projectName + projectFlavor

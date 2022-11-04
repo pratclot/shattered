@@ -3,6 +3,7 @@
 buildscript {
     ext {
         compose_version = '1.1.0-beta01'
+        compose_ui_version = '1.1.1'
     }
     repositories {
         google()
@@ -18,7 +19,7 @@ buildscript {
 
         classpath 'com.google.dagger:hilt-android-gradle-plugin:2.42'
         classpath "org.jetbrains.kotlin:kotlin-serialization:1.7.10"
-        classpath "com.klaxit.hiddensecrets:HiddenSecretsPlugin:0.2.0"
+        classpath "com.klaxit.hiddensecrets:HiddenSecretsPlugin:0.2.1"
     }
 }
 
@@ -26,6 +27,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "10.3.0"
     id 'org.jetbrains.kotlin.jvm' version '1.7.10' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+//    id 'com.android.library' version '7.2.2' apply false
 }
 
 allprojects {
@@ -200,6 +202,7 @@ subprojects {
 
                     implementation project(path: ':screens:news')
                     implementation project(path: ':screens-compose:steamstore')
+                    implementation project(path: ':screens-compose:themoviedb')
 
                     def nav_version = "2.5.1"
                     implementation "androidx.navigation:navigation-compose:$nav_version"
@@ -232,6 +235,9 @@ subprojects {
                 implementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
 
                 androidTestImplementation('androidx.test.uiautomator:uiautomator:2.2.0')
+
+                testImplementation 'androidx.test.ext:junit-ktx:1.1.3'
+
             }
 
             project.android {

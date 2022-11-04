@@ -66,3 +66,11 @@ includeIfNeeded ':api-mock:news'
 includeIfNeeded ':api-live:steamstore'
 includeIfNeeded ':api-mock:steamstore'
 includeIfNeeded ':api-live:common'
+include 'screens-compose:themoviedb'
+project(':screens-compose:themoviedb').projectDir = file('screens-compose/themoviedb')
+include 'usecase:themoviedb'
+project(':usecase:themoviedb').projectDir = file('usecase/themoviedb')
+include 'repository:themoviedb'
+project(':repository:themoviedb').projectDir = file('repository/themoviedb')
+includeIfNeeded ':api-mock:themoviedb'
+includeIfNeeded ':api-live:themoviedb'

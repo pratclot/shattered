@@ -26,6 +26,7 @@ import androidx.navigation.compose.rememberNavController
 import com.pratclot.MyNewsActivity
 import com.pratclot.entrypoint.ui.theme.GenericAndroidProjectTheme
 import com.pratclot.steamstore.SteamStoreActivity
+import com.pratclot.themoviedb.MoviesActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,13 +44,16 @@ class MainActivity : ComponentActivity() {
                             EntryPoint(
                                 onChoiceSteamStore = { navController.navigate(SteamStore.id) },
                                 onChoiceNews = { navController.navigate(News.id) },
-                            )
+                            ) { navController.navigate(Movies.id) }
                         }
                         activity(route = SteamStore.id) {
                             activityClass = SteamStoreActivity::class
                         }
                         activity(route = News.id) {
                             activityClass = MyNewsActivity::class
+                        }
+                        activity(route = Movies.id) {
+                            activityClass = MoviesActivity::class
                         }
                     }
                 }
@@ -59,7 +63,11 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun EntryPoint(onChoiceSteamStore: () -> Unit, onChoiceNews: () -> Unit) {
+fun EntryPoint(
+    onChoiceSteamStore: () -> Unit,
+    onChoiceNews: () -> Unit,
+    onChoiceMovies: () -> Unit
+) {
     Column(
         Modifier.padding(4.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -76,6 +84,11 @@ fun EntryPoint(onChoiceSteamStore: () -> Unit, onChoiceNews: () -> Unit) {
                 Text(text = it)
             }
         }
+        Movies.id.let {
+            Button(onClick = onChoiceMovies) {
+                Text(text = it)
+            }
+        }
     }
 }
 
@@ -83,6 +96,6 @@ fun EntryPoint(onChoiceSteamStore: () -> Unit, onChoiceNews: () -> Unit) {
 @Composable
 fun DefaultPreview() {
     GenericAndroidProjectTheme {
-        EntryPoint({}, {})
+        EntryPoint({}, {}) { }
     }
 }

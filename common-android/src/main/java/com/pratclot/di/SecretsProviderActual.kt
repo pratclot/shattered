@@ -11,6 +11,7 @@ class SecretsProviderActual @Inject constructor() : SecretsProvider {
     override fun getSecretString(key: SecretKeys): String = with(Secrets()) {
         when (key) {
             SecretKeys.API_SECRET_NEWS -> getAPI_SECRET_NEWS(SECRETS_PACKAGE_NAME)
+            SecretKeys.API_MOVIES -> getAPI_MOVIES(SECRETS_PACKAGE_NAME)
         }
     }
 }

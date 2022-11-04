@@ -45,5 +45,5 @@ dependencies {
 
     api "io.mockk:mockk:1.12.5"
     api 'pl.pragmatists:JUnitParams:1.1.1'
-    api 'app.cash.turbine:turbine:0.9.0'
+    api 'app.cash.turbine:turbine:0.12.1'
 }

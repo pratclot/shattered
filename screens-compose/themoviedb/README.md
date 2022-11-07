@@ -6,6 +6,7 @@ How to run:
 
 ```
 API_MOVIES=actual-key-goes-here
+API_SECRET_NEWS=this-one-is-for-another-screen
 ```
 
 then run this:

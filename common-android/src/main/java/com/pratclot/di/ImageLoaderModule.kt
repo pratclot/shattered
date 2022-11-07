@@ -6,16 +6,16 @@ import coil.disk.DiskCache
 import coil.memory.MemoryCache
 import dagger.Module
 import dagger.Provides
+import dagger.Reusable
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
 @Module
 class ImageLoaderModule {
 
-    @Singleton
+    @Reusable
     @Provides
     fun provideImageLoader(@ApplicationContext context: Context): ImageLoader {
         return ImageLoader.Builder(context)

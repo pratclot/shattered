@@ -103,3 +103,4 @@ To see Gradle configuration dependencies (jars or projects):
 - list used libs
 - install Hilt modules in scopes smaller than `SingletonComponent`
 - implement a common file resource reader for mock variants
+- create a task to run all UI tests

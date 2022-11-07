@@ -12,4 +12,6 @@ class Secrets {
     }
 
     external fun getAPI_SECRET_NEWS(packageName: String): String
+
+    external fun getAPI_MOVIES(packageName: String): String
 }

@@ -16,5 +16,6 @@ class CommonApiModule {
     fun provideJson(): Json = Json {
         explicitNulls = false
         ignoreUnknownKeys = true
+        coerceInputValues = true
     }
 }

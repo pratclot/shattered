@@ -12,22 +12,24 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
+        classpath 'com.android.tools.build:gradle:8.7.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
 
-        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.42'
-        classpath "org.jetbrains.kotlin:kotlin-serialization:1.7.10"
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.55'
+        classpath "org.jetbrains.kotlin:kotlin-serialization:2.1.0"
         classpath "com.klaxit.hiddensecrets:HiddenSecretsPlugin:0.2.1"
     }
 }
 
 plugins {
     id("org.jlleitschuh.gradle.ktlint") version "10.3.0"
-    id 'org.jetbrains.kotlin.jvm' version '1.7.10' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+    id 'org.jetbrains.kotlin.jvm' version '2.1.0' apply false
+    id 'org.jetbrains.kotlin.android' version '2.1.0' apply false
 //    id 'com.android.library' version '7.2.2' apply false
+    alias(libs.plugins.compose.compiler) apply false
+    id 'com.google.devtools.ksp' version '2.1.0-1.0.29' apply false
 }
 
 allprojects {
@@ -73,13 +75,14 @@ gradle.projectsEvaluated {
 subprojects {
     apply plugin: "org.jlleitschuh.gradle.ktlint"
 
-    apply plugin: 'kotlin-kapt'
+//    apply plugin: 'kotlin-kapt'
+    apply plugin: 'com.google.devtools.ksp'
 
 
     afterEvaluate {
 
         plugins.withId('com.android.application') {
-            project.apply plugin: 'kotlin-kapt'
+//            project.apply plugin: 'kotlin-kapt'
             project.apply plugin: 'dagger.hilt.android.plugin'
 
             rootProject.subprojects.findAll {
@@ -90,6 +93,8 @@ subprojects {
                 println("writing flavor strategies for $name")
 
                 android {
+                    namespace "com.pratclot"
+
                     flavorDimensions.add("${name}Data".toString())
 
                     productFlavors {
@@ -115,8 +120,8 @@ subprojects {
 
                 implementation project(path: ':screens-compose:entrypoint')
 
-                implementation "com.google.dagger:hilt-android:2.42"
-                kapt "com.google.dagger:hilt-compiler:2.42"
+                implementation "com.google.dagger:hilt-android:2.55"
+                ksp "com.google.dagger:hilt-compiler:2.55"
 
                 testImplementation 'androidx.test.ext:junit-ktx:1.1.3'
 
@@ -125,13 +130,17 @@ subprojects {
         }
 
         plugins.withId('com.android.library') {
-            project.apply plugin: 'kotlin-kapt'
+//            project.apply plugin: 'kotlin-kapt'
             project.apply plugin: 'dagger.hilt.android.plugin'
+            project.apply plugin: libs.plugins.compose.compiler.get().getPluginId()
 
             if (project.path == ':common-android') {
                 project.apply plugin: 'com.klaxit.hiddensecrets'
 
                 project.android {
+                    buildFeatures {
+                        buildConfig true
+                    }
                     externalNativeBuild {
                         cmake {
                             path "src/main/cpp/CMakeLists.txt"
@@ -221,8 +230,8 @@ subprojects {
                 }
                 implementation project(path: ':common-kotlin')
 
-                implementation "com.google.dagger:hilt-android:2.42"
-                kapt "com.google.dagger:hilt-compiler:2.42"
+                implementation "com.google.dagger:hilt-android:2.55"
+                ksp "com.google.dagger:hilt-compiler:2.55"
 
                 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
                 implementation 'androidx.activity:activity-ktx:1.5.1'
@@ -230,7 +239,7 @@ subprojects {
                 // For instrumented tests.
                 androidTestImplementation 'com.google.dagger:hilt-android-testing:2.38.1'
                 // ...with Kotlin.
-                kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.38.1'
+                kspAndroidTest 'com.google.dagger:hilt-android-compiler:2.38.1'
 
                 implementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
 
@@ -241,6 +250,8 @@ subprojects {
             }
 
             project.android {
+//                namespace "com.pratclot"
+
                 defaultConfig {
                     // Replace com.example.android.dagger with your class path.
                     testInstrumentationRunner "com.pratclot.CustomTestRunner"
@@ -277,7 +288,7 @@ subprojects {
         }
 
         plugins.withId('java-library') {
-            project.apply plugin: 'kotlin-kapt'
+//            project.apply plugin: 'kotlin-kapt'
             project.apply plugin: 'org.jetbrains.kotlin.jvm'
             project.apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
 
@@ -360,8 +371,8 @@ subprojects {
                 }
 
 
-                implementation("com.google.dagger:hilt-core:2.42")
-                kapt "com.google.dagger:hilt-compiler:2.42"
+                implementation("com.google.dagger:hilt-core:2.55")
+                ksp "com.google.dagger:hilt-compiler:2.55"
                 implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2'
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
             }

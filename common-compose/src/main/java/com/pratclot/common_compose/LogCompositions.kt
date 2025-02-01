@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.remember
+import com.pratclot.common_compose.BuildConfig
 
 /**
  * From https://www.jetpackcompose.app/articles/how-can-I-debug-recompositions-in-jetpack-compose

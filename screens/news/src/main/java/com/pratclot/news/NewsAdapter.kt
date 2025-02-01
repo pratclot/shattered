@@ -1,4 +1,4 @@
-package com.pratclot
+package com.pratclot.news
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -13,7 +13,6 @@ import coil.ImageLoader
 import coil.load
 import coil.transform.CircleCropTransformation
 import com.pratclot.domain.NewsItem
-import com.pratclot.news.R
 
 class NewsAdapter(
     private val imageLoader: ImageLoader,

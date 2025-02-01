@@ -23,7 +23,7 @@ import androidx.navigation.activity
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.pratclot.MyNewsActivity
+import com.pratclot.news.MyNewsActivity
 import com.pratclot.entrypoint.ui.theme.GenericAndroidProjectTheme
 import com.pratclot.steamstore.SteamStoreActivity
 import com.pratclot.themoviedb.MoviesActivity

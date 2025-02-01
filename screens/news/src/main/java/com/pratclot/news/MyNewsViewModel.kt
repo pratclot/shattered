@@ -1,12 +1,16 @@
-package com.pratclot
+package com.pratclot.news
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import coil.ImageLoader
+import com.pratclot.IdlingResourceProvider
+import com.pratclot.IdlingResourceWrapper
 import com.pratclot.common.UriValidator
 import com.pratclot.domain.NewsItem
+import com.pratclot.logE
+import com.pratclot.throwE
 import com.pratclot.usecase.NewsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CancellationException

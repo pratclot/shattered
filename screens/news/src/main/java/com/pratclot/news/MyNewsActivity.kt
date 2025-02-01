@@ -1,4 +1,4 @@
-package com.pratclot
+package com.pratclot.news
 
 import android.app.Activity
 import android.content.Intent
@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import androidx.test.espresso.IdlingResource
+import com.pratclot.IdlingResourceProvider
 import com.pratclot.domain.NewsItem
 import com.pratclot.news.R
 import dagger.hilt.android.AndroidEntryPoint

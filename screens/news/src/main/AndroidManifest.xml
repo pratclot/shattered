@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pratclot.news">
+    >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application android:theme="@style/AppTheme">
         <activity
-            android:name="com.pratclot.MyNewsActivity"
+            android:name="com.pratclot.news.MyNewsActivity"
             android:exported="false">
         </activity>
     </application>

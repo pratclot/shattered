@@ -1,6 +1,8 @@
 package com.pratclot.dto
 
-@kotlinx.serialization.Serializable
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class MoviesDto(
     val page: Int,
     val results: List<MoviesResult>,

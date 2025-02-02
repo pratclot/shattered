@@ -25,6 +25,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.pratclot.news.MyNewsActivity
 import com.pratclot.entrypoint.ui.theme.GenericAndroidProjectTheme
+import com.pratclot.scout24.MainActivity
 import com.pratclot.steamstore.SteamStoreActivity
 import com.pratclot.themoviedb.MoviesActivity
 
@@ -44,7 +45,9 @@ class MainActivity : ComponentActivity() {
                             EntryPoint(
                                 onChoiceSteamStore = { navController.navigate(SteamStore.id) },
                                 onChoiceNews = { navController.navigate(News.id) },
-                            ) { navController.navigate(Movies.id) }
+                                onChoiceMovies = { navController.navigate(Movies.id) },
+                                onChoiceScout24 = { navController.navigate(Scout24.id) },
+                            )
                         }
                         activity(route = SteamStore.id) {
                             activityClass = SteamStoreActivity::class
@@ -54,6 +57,9 @@ class MainActivity : ComponentActivity() {
                         }
                         activity(route = Movies.id) {
                             activityClass = MoviesActivity::class
+                        }
+                        activity(route = Scout24.id) {
+                            activityClass = MainActivity::class
                         }
                     }
                 }
@@ -66,7 +72,8 @@ class MainActivity : ComponentActivity() {
 fun EntryPoint(
     onChoiceSteamStore: () -> Unit,
     onChoiceNews: () -> Unit,
-    onChoiceMovies: () -> Unit
+    onChoiceMovies: () -> Unit,
+    onChoiceScout24: () -> Unit,
 ) {
     Column(
         Modifier.padding(4.dp),
@@ -89,13 +96,18 @@ fun EntryPoint(
                 Text(text = it)
             }
         }
+        Scout24.id.let {
+            Button(onClick = onChoiceScout24) {
+                Text(text = it)
+            }
+        }
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+private fun DefaultPreview() {
     GenericAndroidProjectTheme {
-        EntryPoint({}, {}) { }
+        EntryPoint({}, {}, {}) { }
     }
 }

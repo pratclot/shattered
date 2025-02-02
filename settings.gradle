@@ -1,3 +1,18 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+
 def includeIfNeeded(proj) {
     if (proj.startsWith(":api-live") || proj.startsWith(':api-mock')) {
         def taskNames = gradle.startParameter.taskNames
@@ -74,3 +89,11 @@ include 'repository:themoviedb'
 project(':repository:themoviedb').projectDir = file('repository/themoviedb')
 includeIfNeeded ':api-mock:themoviedb'
 includeIfNeeded ':api-live:themoviedb'
+include ':screens-compose:scout24'
+project(':screens-compose:scout24').projectDir = file('screens-compose/scout24')
+include 'usecase:scout24'
+project(':usecase:scout24').projectDir = file('usecase/scout24')
+include 'repository:scout24'
+project(':repository:scout24').projectDir = file('repository/scout24')
+includeIfNeeded ':api-mock:scout24'
+includeIfNeeded ':api-live:scout24'

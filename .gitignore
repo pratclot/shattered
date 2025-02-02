@@ -61,3 +61,4 @@ lint/tmp/
 
 # build-time secrets
 secret.properties
+secrets.properties

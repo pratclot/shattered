@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.pratclot.common_compose.Ref
+-keep class com.pratclot.steamstore.ImmutableHolder
+-keep class com.pratclot.steamstore.RecomposeHighlighterKt

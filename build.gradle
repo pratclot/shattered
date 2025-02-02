@@ -212,6 +212,7 @@ subprojects {
                     implementation project(path: ':screens:news')
                     implementation project(path: ':screens-compose:steamstore')
                     implementation project(path: ':screens-compose:themoviedb')
+                    implementation project(path: ':screens-compose:scout24')
 
                     def nav_version = "2.5.1"
                     implementation "androidx.navigation:navigation-compose:$nav_version"
@@ -250,11 +251,11 @@ subprojects {
             }
 
             project.android {
-//                namespace "com.pratclot"
 
                 defaultConfig {
                     // Replace com.example.android.dagger with your class path.
                     testInstrumentationRunner "com.pratclot.CustomTestRunner"
+                    consumerProguardFiles "consumer-rules.pro"
                 }
                 testOptions {
                     animationsDisabled true
@@ -262,7 +263,7 @@ subprojects {
                 buildTypes {
                     debugMinify {
                         initWith debug
-                        minifyEnabled true
+                        minifyEnabled false
                         proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
                     }
                 }
@@ -301,7 +302,7 @@ subprojects {
 
             if (project.path == ':api-live:common') {
                 dependencies {
-                    api('com.squareup.retrofit2:retrofit:2.9.0')
+                    api('com.squareup.retrofit2:retrofit:2.10.0')
                     api("com.squareup.okhttp3:logging-interceptor:4.10.0")
                     api("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0")
                 }

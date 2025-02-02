@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="app_name">Scout24</string>
+    <string name="nothing_to_show_please_go_back">nothing to show, please go back!</string>
+</resources>

@@ -1,6 +1,8 @@
 package com.pratclot.dto
 
-@kotlinx.serialization.Serializable
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class MovieDto(
     val adult: Boolean,
     val backdrop_path: String,

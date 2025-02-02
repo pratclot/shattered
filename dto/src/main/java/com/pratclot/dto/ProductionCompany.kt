@@ -1,6 +1,8 @@
 package com.pratclot.dto
 
-@kotlinx.serialization.Serializable
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class ProductionCompany(
     val id: Int,
     val logo_path: String?,
